@@ -1,136 +1,145 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
-
-}
-
-html{
-    scroll-behavior: smooth;
-}
-a{
-    text-decoration: none;
-}
-
-ul{
-    list-style: none;
     
 }
+.main{
+    width: 100%;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(back1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    background-color: #ececee;
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
 }
 .logo{
-    padding-left: 2em;
+    color:white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
 }
-.logo-text{
-    font-size: 2em;
-}
+.menu{
+    width: 400px;
+    float:left;
+    height: 70px;
 
-.menubar{
-    width:45%;
-    margin-left: 8.5em;
 }
-.list{
+ul{
+    float: left;
     display: flex;
-    justify-content: space-between;
-}
-.list-items a{
-    color:black;
-    font-family: sans-serif;
-    font-size: 0.9em;
-    transition: 0.4s;
-}
-.list-items a:hover{
-    color: black;
-}
-.cart{
-    padding-right: 2em;
-    position: relative;
-}
-.cart .number-of-items{
-    display: flex;
-    cursor: pointer;
     justify-content: center;
     align-items: center;
-    color: white;
-    position: absolute;
-    left: 18px;
-    top:-7px;
-    background: #f09d51;
-    height: 20px;
-    width: 20px;
-    border-radius: 7px;
+}
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 25px;
+    font-size: 15px;
 
 }
-.number-of-items .noi{
-    font-size: 0.7em;
+ul li a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
 }
-.fa-shopping-cart{
-    font-size: 1.5em;
-    cursor: pointer;
+ul li a:hover{
+    color: brown;
 }
-.burger{
-    height: 28px;
-    width: 32px;
-    display: none;
+.search{
+    width: 300px;
+    float: left;
+    margin-left: 270px;
 }
-.layer1,.layer2,.layer3{
-    background:black;
-    height: 4px;
-    margin-top: 4px;
-    width: 100%;
+.srch{
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid orange;
+    margin-top: 13px;
+    color: white;
+    border-right: none;
+    font-size: 16px;
+    padding: 10px;
+    float: left;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.btn{
+    width: 100px;
+    height: 40px;
+    margin-top: 13px;
+    font-size: 15px;
+    color: white;
+    background: orange;
+    border:2px solid orange;
+    border-bottom-right-radius: 5px;
+
+}
+.btn:focus{
+    outline: none;
+
+}
+.srch:focus{
+    outline: none;
+}
+.content{
+    width: 1200px;
+    margin: auto;
+    height: auto;
+    color: white;
+    position: relative;
+
+}
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+
+}
+.content h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+    
+}
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: orange;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 16px;
     border-radius: 10px;
+    cursor: pointer;
 }
-.section{
-    height: calc(100vh - 10vh);
-    width: 100%;
-    background-image: url("C:\Infotrix-frontend\images/back1.jpg") center center/cover;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.content .cn a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
 }
-
-.section1 .banner{
-    height:1px ;
-    width: 500px;
-    background: rgba(255, 255, 255, 0.7);
-    position: relative;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    display: center;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-family: sans-serif;
-    z-index: 8;
-}
-.banner h1{
-    font-size: 2em;
-}
-.banner a{
-    display: flex;
-    justify-content: center;
-    padding: 1em 2.5em;
-    font-size: 0.8em;
-    color: white;
-    background: rgb(0, 140, 255);
-    transition: all 0.3s;
+.cn :hover{
+    background-color: white;
 
 }
-
-.banner a:hover{
-    background: blue;
-}
-.title{
-    display:block;
-    margin-left: 40px;  
-}
-.section2{
-    background-color:ivory;
+.content span{
+    color: orange;
+    font-size: 60px;
 }
